@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,43 +6,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/uploud.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/uploud.css">
     <title>SmartDriveOTA</title>
-
 </head>
 
 <body>
-
-  
-      <section class="update-section">
-        <div class="update-contain">
-          <form class="update-form-contain" id="updating-form">
-            <div class="form-heading">Updating</div>
-
-            <div class="secound-part">
-              <label for="">Version number: </label>
-              <input class="versiion" id="version" name="Version?" type="number"  />
-              <button>Update</button>
+    <section class="pricing-section">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2>CHOOSE YOUR PLAN</h2>
+                <p>You can add new feature or fix bugs in your car</p>
             </div>
-            <div class="update-choosing"><input type="file" id="file-input" /></div>
-            <div class="update-uploading"><button class="update-uploading-btn" id="uppdate" type="button" onclick="uploadFile() , uploudData()">Upload</button></div>
-          </form>
+            <div class="pricing-cards">
+                <div class="card">
+                    <h3>Add New Feature</h3>
+                    <p>$49/Year</p>
+                    <ul>
+                        <li>Automatic Emergency Brake</li>
+                        <li>AEB</li>
+                        <li>Email Support</li>
+                        <li>Limited Access</li>
+                    </ul>
+                    <button class="choose-btn" id="upload1" type="button">CHOOSE</button>
+                </div>
+                <div class="card">
+                    <h3>Fix your software bugs</h3>
+                    <p>FREE</p>
+                    <ul>
+                        <li>Everything In Free</li>
+                        <li>Restore Stable Software</li>
+                        <li>Email Support</li>
+                        <li>unlimited Access</li>
+                    </ul>
+                    <button class="choose-btn" id="upload2" type="button">CHOOSE</button>
+                </div>
+                <!-- <div class="card">
+                    <h3>Enterprise</h3>
+                    <p>$99/Year</p>
+                    <ul>
+                        <li>Everything In Pro, Plus</li>
+                        <li>Dedicated Support</li>
+                        <li>Unlimited Access</li>
+                        <li>Lifetime Access</li>
+                    </ul>
+                    <button class="choose-btn" id="upload3" type="button">CHOOSE</button>
+                </div> -->
+            </div>
         </div>
-      </section>
-  
-      
-        <!-- Add the Firebase SDK using script tags -->
-        <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app-compat.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-storage-compat.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-database-compat.js"></script>
-        <script src="demo.js"></script>
+    </section>
+
+    <!-- Add the Firebase SDK using script tags -->
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-database-compat.js"></script>
+    <script src="demo2.js"></script> <!-- This script will handle the upload logic -->
 </body>
 
 </html>
